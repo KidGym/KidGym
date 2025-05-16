@@ -1,0 +1,47 @@
+{
+    "goal": "There is a diamond shown in the scene, and you need to obtain the diamond. When your path is blocked by a door, you can use a key of the same color to unlock it. Note: You must pick up the key first before you can use it to unlock doors.",
+    "success": true,
+    "use_steps": 3,
+    "max_steps": 3,
+    "obs": "/home_data/home/yehw2024/GridAgent/examples/maze/step_0.png",
+    "steps": [
+        {
+            "step": 1,
+            "actions": [
+                "obtain object with label 0",
+                "obtain object with label 1"
+            ],
+            "action": "obtain object with label 0",
+            "step_success": true,
+            "task_success": 0,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/maze/step_1.png",
+            "reason": "Since one of the goals is to 'obtain the diamond', and your path is blocked by a blue door, so you should first pick up the blue key. Since the object with label 0 is blue key, the first action you should choose is A: 'obtain object with label 0'."
+        },
+        {
+            "step": 2,
+            "actions": [
+                "use the key in backpack A to unlock door with label 2",
+                "obtain object with label 1"
+            ],
+            "action": "use the key in backpack A to unlock door with label 2",
+            "step_success": true,
+            "task_success": 0,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/maze/step_2.png",
+            "reason": "After ficking up blue key, you should use the blue key to open the blue blue door. The blue key is in backpack A and the door with label 2 is the blue door, the next action you should choose is A: 'use the key in backpack A to unlock door with label 2'."
+        },
+        {
+            "step": 3,
+            "actions": [
+                "obtain object with label 1"
+            ],
+            "action": "obtain object with label 1",
+            "step_success": true,
+            "task_success": true,
+            "over": true,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/maze/step_3.png",
+            "reason": "After that, you can get the diamond directly. The object with label 1 is the dimand, so in the next step, we choose the option: 'obtain object with label 1'."
+        }
+    ]
+}

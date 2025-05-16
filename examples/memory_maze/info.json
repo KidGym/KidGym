@@ -1,0 +1,65 @@
+{
+    "goal": "In the first image, a diamond will be shown in the scene that you need to remember its location. In the following images, the diamond will not be shown and several treasure boxes will be generated in the scene. You must choose to open the treasure box located at the diamond's original position to obtain the diamond. When your path is blocked by a door, you can use a key of the same color to unlock it. Note: You must obtain the key before you can use it to unlock doors. If you understand the rules, choose 'continue' to begin the task.",
+    "success": true,
+    "use_steps": 4,
+    "max_steps": 4,
+    "obs": "/home_data/home/yehw2024/GridAgent/examples/memory_maze/step_0.png",
+    "steps": [
+        {
+            "step": 1,
+            "actions": [
+                "continue"
+            ],
+            "action": "continue",
+            "step_success": true,
+            "task_success": false,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/memory_maze/step_1.png",
+            "reason": "Since the goal is to 'memorize the exact location of the diamond and obtain the diamond in the dungeon', you should remember the diamond's position and label first. The diamond is of label 3. After remembering it, the first action you should choose is A: 'continue'."
+        },
+        {
+            "step": 2,
+            "actions": [
+                "obtain object with label 3",
+                "obtain object with label 1",
+                "obtain object with label 0",
+                "obtain object with label 4"
+            ],
+            "action": "obtain object with label 1",
+            "step_success": true,
+            "task_success": false,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/memory_maze/step_2.png",
+            "reason": "After remembering the diamond's label, you can see that your path is blocked by a blue door, so you should first pick up the blue key. Since the object with label 1 is blue key, the first action you should choose is B: 'obtain object with label 1'."
+        },
+        {
+            "step": 3,
+            "actions": [
+                "obtain object with label 0",
+                "use the key in backpack A to unlock door with label 2",
+                "obtain object with label 4",
+                "obtain object with label 3"
+            ],
+            "action": "use the key in backpack A to unlock door with label 2",
+            "step_success": true,
+            "task_success": false,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/memory_maze/step_3.png",
+            "reason": "After ficking up blue key, you should use the blue key to open the blue blue door. The blue key is in backpack A and the door with label 2 is the blue door, the next action you should choose is B: 'use the key in backpack A to unlock door with label 2'."
+        },
+        {
+            "step": 4,
+            "actions": [
+                "obtain object with label 0",
+                "obtain object with label 4",
+                "obtain object with label 3"
+            ],
+            "action": "obtain object with label 3",
+            "step_success": true,
+            "task_success": true,
+            "over": true,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/memory_maze/step_4.png",
+            "reason": "After that, you can get the diamond directly. Since you have remembered in the first step that the object with label 3 is the dimand, the next action you should choose is C: 'obtain object with label 3'."
+        }
+    ]
+}

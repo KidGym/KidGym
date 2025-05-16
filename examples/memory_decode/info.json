@@ -1,0 +1,36 @@
+{
+    "goal": "In the first image, arrow-connected items with one-to-one correspondence(s) will be shown on the left margin that you need to remember. In the following images, the correspondence(s) will not be shown, and a target item will be generated in the black box in the upper left corner. You need to select the correct corresponding item for the target based on the pairing you remembered in the first image. If you understand the rules, choose 'continue' to begin the task.",
+    "success": true,
+    "use_steps": 2,
+    "max_steps": 2,
+    "obs": "/home_data/home/yehw2024/GridAgent/examples/memory_decode/step_0.png",
+    "steps": [
+        {
+            "step": 1,
+            "actions": [
+                "continue"
+            ],
+            "action": "continue",
+            "step_success": true,
+            "task_success": false,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/memory_decode/step_1.png",
+            "reason": "Since the correspondence(s) will be shown only in the firat image, you should remember the correspondence first. The correspondence is: 'hamburger corresponds to football'.  Also the goal say:' If you understand the rules, choose 'continue' to begin the task.' After remembering it, the first action you should choose is A: 'continue'."
+        },
+        {
+            "step": 2,
+            "actions": [
+                "choose item with label 0",
+                "choose item with label 3",
+                "choose item with label 2",
+                "choose item with label 1"
+            ],
+            "action": "choose item with label 2",
+            "step_success": true,
+            "task_success": true,
+            "over": true,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/memory_decode/step_2.png",
+            "reason": "Since the final goal is to 'select the correct corresponding item to the target item inside the black box in the upper left corner', you have already remembered the correspondence: 'hamburger corresponds to football', the target item in the top left corner is hamburger, so you need to select the football on the right part of the frame. Since the item with label 2 is the football, the first action you should choose is C: 'choose item with label 2'."
+        }
+    ]
+}

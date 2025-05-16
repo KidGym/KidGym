@@ -1,0 +1,24 @@
+{
+    "goal": "There is a target item shown on the left margin. You need to fill the correct piece(s) from the backpack to complete the missing part(s) of the frame in the scene, ensuring they match and align with the target item.",
+    "success": true,
+    "use_steps": 1,
+    "max_steps": 1,
+    "obs": "/home_data/home/yehw2024/GridAgent/examples/puzzle/step_0.png",
+    "steps": [
+        {
+            "step": 1,
+            "actions": [
+                "place piece in backpack D at grid I",
+                "place piece in backpack A at grid I",
+                "place piece in backpack C at grid I",
+                "place piece in backpack B at grid I"
+            ],
+            "action": "place piece in backpack C at grid I",
+            "step_success": true,
+            "task_success": true,
+            "over": true,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/puzzle/step_1.png",
+            "reason": "Since the goal is to 'complete the missing part(s) of the frame in the scene', you need to analyze the information of the missing part of the picture according to the information of the known picture. The framed image on the right is missing the upper-left corner, specifically a left triangle with a right Angle vertex in the upper right corner. By examining the four available puzzle pieces, we can determine that piece C matches the missing feet. So the action you should choose is C: 'place piece in backpack C at grid I'."
+        }
+    ]
+}

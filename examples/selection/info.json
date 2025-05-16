@@ -1,0 +1,36 @@
+{
+    "goal": "In the first image, an item will be shown on the left margin that you need to remember. In the following images, several random items will be generated in the scene, and your need to select the one you recall. If you understand the rules, select the 'continue' action to start the task.",
+    "success": true,
+    "use_steps": 2,
+    "max_steps": 2,
+    "obs": "/home_data/home/yehw2024/GridAgent/examples/selection/step_0.png",
+    "steps": [
+        {
+            "step": 1,
+            "actions": [
+                "continue"
+            ],
+            "action": "continue",
+            "step_success": true,
+            "task_success": false,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/selection/step_1.png",
+            "reason": "You should remember the item shown on the left margin first. The item is a sushi. After remembering it, the first action you should choose is A: 'continue'."
+        },
+        {
+            "step": 2,
+            "actions": [
+                "choose food with label 2",
+                "choose food with label 3",
+                "choose food with label 1",
+                "choose food with label 0"
+            ],
+            "action": "choose food with label 0",
+            "step_success": true,
+            "task_success": true,
+            "over": true,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/selection/step_2.png",
+            "reason": "After you remembering it, you see that several items are displayed in the frame. Since you remember the target item is a sushi and the item with label 0 is a sushi, the next action you should choose is D: 'choose food with label 0'."
+        }
+    ]
+}

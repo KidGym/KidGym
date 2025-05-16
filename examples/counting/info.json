@@ -1,0 +1,38 @@
+{
+    "goal": "Collect 1 egg(s) from the scene into the backpack. Make sure you have gathered precisely this amount, no more and no less. Once you have done so, please choose: 'I have already collected 1 eggs'.",
+    "success": true,
+    "use_steps": 2,
+    "max_steps": 5,
+    "obs": "/home_data/home/yehw2024/GridAgent/examples/counting/step_0.png",
+    "steps": [
+        {
+            "step": 1,
+            "actions": [
+                "pick up egg with label 0",
+                "pick up egg with label 2",
+                "pick up egg with label 1",
+                "I have already collected 1 eggs."
+            ],
+            "action": "pick up egg with label 1",
+            "step_success": true,
+            "task_success": false,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/counting/step_1.png",
+            "reason": "Since the goal is to 'collect 1 egg', and the item with label 1 is 1 egg. So the first action you should choose is C: 'pick up egg with label 1'."
+        },
+        {
+            "step": 2,
+            "actions": [
+                "pick up egg with label 2",
+                "I have already collected 1 eggs.",
+                "pick up egg with label 0"
+            ],
+            "action": "I have already collected 1 eggs.",
+            "step_success": true,
+            "task_success": true,
+            "over": true,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/counting/step_2.png",
+            "reason": "After picking up egg with label 1, you have already reached the goal. So the next action you should choose is B: 'I have already collected 1 eggs'."
+        }
+    ]
+}

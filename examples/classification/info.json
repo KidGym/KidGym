@@ -1,0 +1,61 @@
+{
+    "goal": "Place sushi in the green basket. Place pizza in the red basket.",
+    "success": true,
+    "use_steps": 4,
+    "max_steps": 4,
+    "obs": "/home_data/home/yehw2024/GridAgent/examples/classification/step_0.png",
+    "steps": [
+        {
+            "step": 1,
+            "actions": [
+                "pick up the item with label 1",
+                "pick up the item with label 2"
+            ],
+            "action": "pick up the item with label 2",
+            "step_success": true,
+            "task_success": false,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/classification/step_1.png",
+            "reason": "Since one of the goals is to 'place sushi in the green basket', and the item with label 2 is a sushi, the first action you should choose is B: 'pick up the item with label 2'."
+        },
+        {
+            "step": 2,
+            "actions": [
+                "put the item from backpack A into the basket with label 0",
+                "put the item from backpack A into the basket with label 3",
+                "pick up the item with label 1"
+            ],
+            "action": "put the item from backpack A into the basket with label 3",
+            "step_success": true,
+            "task_success": false,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/classification/step_2.png",
+            "reason": "After picking up the sushi, you need to place it in the green basket (label 3). So, the next action should be B: 'put the item from backpack A into the basket with label 3'."
+        },
+        {
+            "step": 3,
+            "actions": [
+                "pick up the item with label 1"
+            ],
+            "action": "pick up the item with label 1",
+            "step_success": true,
+            "task_success": false,
+            "over": false,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/classification/step_3.png",
+            "reason": "You have already completed the first goal. The next goal is to 'place pizza in the red basket'. Therefore, the correct action is A: 'pick up the item with label 1'."
+        },
+        {
+            "step": 4,
+            "actions": [
+                "put the item from backpack A into the basket with label 3",
+                "put the item from backpack A into the basket with label 0"
+            ],
+            "action": "put the item from backpack A into the basket with label 0",
+            "step_success": true,
+            "task_success": true,
+            "over": true,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/classification/step_4.png",
+            "reason": "Finally, you need to place the pizza in the red basket (label 0) after picking it up. So, the last action should be B: 'put the item from backpack A into the basket with label 0'."
+        }
+    ]
+}

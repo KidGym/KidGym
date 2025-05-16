@@ -1,0 +1,24 @@
+{
+    "goal": "There are arrow-connected items with one-to-one correspondence(s) shown on the left margin and a target item displayed in the black box in the upper left corner. You need to select the correct corresponding item for the target based on the correspondence(s).",
+    "success": true,
+    "use_steps": 1,
+    "max_steps": 1,
+    "obs": "/home_data/home/yehw2024/GridAgent/examples/decode/step_0.png",
+    "steps": [
+        {
+            "step": 1,
+            "actions": [
+                "choose item with label 0",
+                "choose item with label 3",
+                "choose item with label 2",
+                "choose item with label 1"
+            ],
+            "action": "choose item with label 2",
+            "step_success": true,
+            "task_success": true,
+            "over": true,
+            "obs": "/home_data/home/yehw2024/GridAgent/examples/decode/step_1.png",
+            "reason": "Since the goal is to 'select the correct corresponding item for the target based on the correspondence', the correspondence on the left side is 'hamburger corresponds to football', and the target item in the top left corner is hamburger, so you need to select the football on the right part of the frame. Since the item with label 2 is the football, the first action you should choose is C: 'choose item with label 2'."
+        }
+    ]
+}
