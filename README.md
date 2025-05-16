@@ -1,4 +1,4 @@
-# KidGym: A 2D Reasoning Benchmark for MLLMs Inspired by Children Intelligence Tests
+# Children's Intelligence Tests Pose Challenges for MLLMs? KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs
 
 ## Install
 
